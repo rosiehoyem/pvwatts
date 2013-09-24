@@ -20,5 +20,5 @@ PvWatts Widget
   * Enter an address and other data to get montly cost estimates
 
 ## Uses
-  * Yui3, google geocoding api, pvwatts beta
+  * Yui3, google geocoding api, pvwatts beta, flask
 
