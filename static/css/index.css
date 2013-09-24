@@ -1,0 +1,32 @@
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #333333;
+}
+
+div.label{
+  margin: 10px;
+  font-size: 20px;
+}
+
+input.address {
+  border-radius: 10px;
+  border:1px solid black;
+  padding-left: 7px;
+  margin: 5px;
+  width: 150px;
+  height: 30px;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+} 
+
+a {
+  text-decoration: none;
+  color: #666666;
+}
+
+a:hover {
+  text-decoration: underline;
+}

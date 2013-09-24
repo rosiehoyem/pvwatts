@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../static/css/index.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzakTdL2yDedKtpBoI3hAUzLNgQSbSvjk&sensor=false"></script>
+    <script type="text/javascript">
+      setLocation = function() {
+        var geocoder = new google.maps.Geocoder();
+        var address = document.getElementsByClassName('address')[0].value;
+
+        geocoder.geocode({'address': address}, function(results, status) {
+          if (status == google.maps.GeocoderStatus.OK) {
+            var lat = results[0].geometry.location.lat();
+            var lon = results[0].geometry.location.lng();
+            
+            var form = document.getElementById('hidden-form');
+            form['lon'].value = lon;
+            form['lat'].value = lat;
+            form.submit();
+          }
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <div class="label">Input Address:</div>
+    <input class="address" type="text">
+    <a href="javascript:setLocation();">Next Step</a>
+    <form id=hidden-form method=POST action="/pvwatts.html">
+      <input type=hidden name=lon value=''>
+      <input type=hidden name=lat value=''>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+.pvwatts {
+  padding: 15px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  width: 50%; 
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.label {
+  margin-top: 10px;
+}
+
+input {
+  border-radius: 10px;
+  border:1px solid black;
+  padding-left: 4px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.submit-info {
+  margin-top: 15px;
+}

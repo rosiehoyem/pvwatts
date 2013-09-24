@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../static/css/pvwatts.css">
+    <script src="http://yui.yahooapis.com/3.11.0/build/yui/yui-min.js"></script>
+    <script src="../static/js/pvwatts-widget.js"></script>
+    <script type="text/javascript">
+      YUI().use('pvwatts-widget', function(Y) {
+          watts = new Y.Solaire.Widget.PvWatts({
+            address: {
+              lat: {{latitude}},
+              lon: {{longitude}}
+            }
+          });
+          watts.render();
+          watts.focus();
+          });
+    </script>
+  </head>
+  <body>
+    <form id=hidden-form method=POST action="/results.html">
+      <input type=hidden name=json value=''>
+    </form>
+  </body>
+</html>
