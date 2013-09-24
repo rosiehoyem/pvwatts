@@ -16,7 +16,7 @@ PvWatts Widget
   * Currently, the data accessed through the api is displayed in a table
 
 ## Running
-  * Simply run `python app.py` in the terminal and open localhost:500
+  * Simply run `python app.py` in the terminal and open localhost:5000
   * Enter an address and other data to get montly cost estimates
 
 ## Uses
